@@ -1,0 +1,18 @@
+---
+execution:
+- executor: jmeter
+  iterations: 10
+  concurrency: 10
+  ramp-up: 2s
+  scenario:
+    script: Test6.jmx
+reporting:
+- dump-xml: aggregate-results.xml
+  report-name: PerTest_Report1
+  test: PerTest_Report1
+  project: Demos
+  upload-artifacts: true
+  module: blazemeter
+modules:
+  blazemeter:
+    token: 8103a4bf8b311b28eb624f2f:2502b096e01d8fc445cdc10aeacec6789059aad903bfc5b7ea7321a3da216a2c638283dc
